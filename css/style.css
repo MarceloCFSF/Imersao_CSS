@@ -1,37 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Aula inicial :D */
 body {
-    font-family: Arial;
-    background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
-    background-size: auto 100vh;
-    height: 100vh;
-  }
-  .menu {
-    background-color: white;
-  }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  a {
-    color: teal;
-    text-decoration: none; 
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-title, .site-subtitle {
-    color: whitesmoke;
-    text-align: center;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
+  font-family: Arial;
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;
+  height: 100vh;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  color: teal;
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu a {
+  padding: 10px 20px;
+  display: block;
+}
+
+.site-title, .site-subtitle {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+}
